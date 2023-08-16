@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+
+    <title>Test user</title>
+</head>
+<body>
+    
+    <div class="container">
+    <h1>Daftar Karyawan</h1>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <a href="users/create" class="btn btn-primary mt-1">Tambah</a>
+  <table class="table" id="table">
+            <thead>
+              <tr>
+                <th scope="col">Nik</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Divisi</th>
+                <th scope="col">Tanggal Masuk</th>
+                <th scope="col">Tanggal Habis Kontrak</th>
+                <th scope="col">Status Karyawan</th>
+                <th scope="col">Jabatan</th>
+                <th scope="col">Cabang</th>
+                <th scope="col">Pembayaran Gaji</th>
+                <th scope="col">Status Gajian</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tbody>
+                   
+                        <tr>
+                            <th scope="row"></th>
+                            <td>000001</td>
+                            <td>Test</td>
+                            <td>14/07/2023</td>
+                            <td>14/07/2025</td>
+                            <td>Tetap</td>
+                            <td>Manager</td>
+                            <td>TS</td>
+                            <td>Bulanan</td>
+                            <td>Normal</td>
+                            <td class="text-center">
+                                <!-- Trigger the modal with a button -->
+                                <a type="button" class="btn btn-primary btn-icon btn-xs" data-toggle="modal" href="users/detail/12" title="detail">Detail</a>
+                            </td>
+                            <td class="text-center">
+                                <!-- Trigger the modal with a button -->
+                                <a type="button" class="btn btn-warning btn-icon btn-xs" data-toggle="modal"  href="users/" title="edit">Edit</a>
+                            </td>
+
+                        </tr>
+                        
+                </tbody>
+            </body>
+    </html>
